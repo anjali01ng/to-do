@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="id=edge">
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="text-box" placeholder="Enter here"/>
+    <input type="button" id="btn" value="click me"/>
+    <div id="para">
+      <ul id="ul1"></ul>
+    </div>
+  </body>
+    <script>
+    var e=document.getElementById('text-box')
+    var e1=document.getElementById('btn')
+    var e5=document.getElementById('ul1')
+    e1.addEventListener('click', append)
+    function append()
+    {
+      var e3 = document.createElement('li')
+      e5.appendChild(e3)
+      e3.textContent=e.value
+      console.log(e3)
+    }
+    </script>
+</html>
